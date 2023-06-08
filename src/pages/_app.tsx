@@ -1,5 +1,4 @@
-// import '@/styles/globals.css'z
-import "@/styles/base.css";
+import "@/styles/globals.css";
 import Aos from "aos";
 import type { AppProps } from "next/app";
 import { useEffect } from "react";

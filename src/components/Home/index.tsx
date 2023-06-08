@@ -1,26 +1,41 @@
+import { SKILL_DATA } from "@/data";
+import AnimateText from "../AnimateText";
+import Title from "@/Title";
+
 interface HomeProps {}
 
 const Home: React.FC<HomeProps> = () => {
   return (
     <div id="home" className="scroll-page pb-[200px]">
-      <div className="flex justify-between items-center m-1 gap-5 h-full">
+      <div className="flex justify-between items-center m-1 gap-[10rem] h-full">
         <div className="w-[500px]" data-aos="fade-right" data-aos-delay="400">
-          <p className="">{`Hi, I'm Huynh Thi Kieu Oanh`}</p>
-          <p>Front end Web Developer</p>
-          <p>
+          <h2 className="mt-4 my-2 text-3xl font-bold text-gray-800 my-name">
+            {`Hi, I'm Huynh Thi Kieu Oanh`}
+          </h2>
+          <AnimateText text="Front end Web Developer" />
+          <p className="text-lg font-light leading-relaxed">
             I have more than a year of making products that solve user problems
             with HTML, CSS and Javascript and implementing responsive website. I
             want to experience Backend Web Development. In the next 3 years i
             want to become Fullstack developer.
           </p>
-          <button>Work with me</button>
+
+          <p className="mt-2 font-light leading-relaxed">
+            <span className="font-bold"> Working motto: </span>Responsible, like
+            to challenge and be flexible.
+            <br />
+            <span className="font-bold">My objective: </span>
+            be more fluency in frontend web development using many
+          </p>
           <div className="flex items-center justify-center w-full">
-            <div className="w-full max-w-lg px-10 py-8 mx-auto bg-white rounded-lg ">
+            <div className="w-full max-w-lg px-10 py-8 mx-auto bg-white rounded-lg">
               <div className="max-w-md mx-auto space-y-6 flex justify-center">
-                <a className="group font-medium tracking-wide select-none text-base relative inline-flex items-center justify-center cursor-pointer h-12 border-2 border-solid py-0 px-6 rounded-md overflow-hidden z-10 transition-all duration-300 ease-in-out outline-0 bg-blue-500 text-white border-blue-500 hover:text-blue-500 focus:text-blue-500">
-                  <strong className="font-medium">Work with me</strong>
+                <a className="group font-medium tracking-wide select-none text-base relative inline-flex items-center justify-center cursor-pointer h-12 border-2 border-solid py-0 px-6 rounded-md overflow-hidden z-10 transition-all duration-300 ease-in-out outline-0 bg-[#C9E0FC] text-white border-[#C9E0FC] hover:text-blue-500 focus:text-blue-500">
+                  <strong className="font-medium text-blue-500 ">
+                    Work with me
+                  </strong>
                   <svg
-                    className="ml-1 rotate-180 fill-white group-hover:fill-blue-500"
+                    className="ml-1 rotate-180 fill-blue-500 group-hover:fill-blue-500"
                     width="27"
                     height="27"
                     viewBox="0 0 27 27"
@@ -40,17 +55,27 @@ const Home: React.FC<HomeProps> = () => {
           </div>
         </div>
         <div data-aos="fade-left" data-aos-delay="400">
-          <div className="rect relative w-[500px] h-[500px] bg-[#000000] rotate-[15deg] top-[3rem] z-[12] right-[-4rem] rounded-[25%]"></div>
-          <div className="skill-rect absolute top-[4rem] h-[500px] w-[500px] bg-[#689bdd] rotate-[-19] z-[100] rounded-[25%]">
-            <div className="grid grid-cols-3 gap-4 p-14">
-              <p>SKill keyyy</p>
-              <p>SKill keyyy</p>
-              <p>SKill keyyy</p>
-              <p>SKill keyyy</p>
-              <p>SKill keyyy</p>
-              <p>SKill keyyy</p>
-              <p>SKill keyyy</p>
-              <p>SKill keyyy</p>
+          <div className="rect relative w-[470px] h-[470px] bg-[#000000] rotate-[15deg] top-[3rem] z-[12] right-[-4rem] rounded-[25%]"></div>
+          <div className="skill-rect flex items-center justify-center absolute top-[4rem] h-[470px] w-[470px] bg-[#689bdd] rotate-[-19] z-[100] rounded-[25%]">
+            <div className="wrapper left-0">
+              <div className="grid place-items-center justify-start py-5">
+                <Title
+                  title="Key skills"
+                  aosAnimation={{
+                    "data-aos": "fade-in",
+                    "data-aos-delay": "250",
+                  }}
+                />
+              </div>
+              <div className="grid grid-cols-2 items-center text-[24px] gap-y-5 gap-x-12">
+                {SKILL_DATA.map((text) => (
+                  <div key={text}>
+                    <p key={text}>
+                      <a href="#">{text}</a>
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

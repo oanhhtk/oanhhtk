@@ -11,12 +11,11 @@ import { useRef } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function MyApp() {
-  const ref = useRef<any>();
   return (
     <>
       <Header />
       <div className="">
-        <div className="block h-[80px] bg-cyan-100"></div>
+        <div className="block h-[70px]"></div>
         <Home />
         <WorkExperience data={WorkExperienceData} />
         <Project />
