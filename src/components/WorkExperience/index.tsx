@@ -9,7 +9,6 @@ interface WorkExperienceProps {
 }
 //bg-gradient-to-b from-blue-300 to-pink-300 dark:from-blue-800 dark:to-purple-800
 const WorkExperience: React.FC<WorkExperienceProps> = ({ data }) => {
-  const [expanded, setExpanded] = useState(false);
   return (
     <div id="work-experience" className="h-full m-2 bg-[#DFE7FF] rounded-xl">
       <Heading

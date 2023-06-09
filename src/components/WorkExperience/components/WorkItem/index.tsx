@@ -8,7 +8,6 @@ interface WorkItemProps {
 
 const WorkItem: React.FC<WorkItemProps> = ({ item }) => {
   const [expanded, setExpanded] = useState(false);
-
   return (
     <div
       data-aos="fade-right"
@@ -24,14 +23,11 @@ const WorkItem: React.FC<WorkItemProps> = ({ item }) => {
           "data-aos": "fade-right",
           "data-aos-delay": "200",
         }}
-        onToggle={() => {
-          alert(item.projectJoineds?.length);
-          item.projectJoineds?.length && setExpanded((prev) => !prev);
-        }}
+        onToggle={() => setExpanded((prev) => !prev)}
       />
       <div
         id="content"
-        className={`content overflow-hidden grid duration-300 max-h-screen overflow-y-auto md:max-h-[100%]  md:overflow-unset md:grid-rows-1  ${
+        className={`content overflow-hidden grid duration-300 max-h-screen overflow-y-auto md:max-h-[100%] md:overflow-unset md:grid-rows-1  ${
           expanded ? "expanded" : ""
         }`}
       >
