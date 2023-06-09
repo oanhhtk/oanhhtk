@@ -14,6 +14,9 @@ const WorkItem: React.FC<WorkItemProps> = ({ item }) => {
       data-aos-delay="200"
       className="flex flex-col lg:items-start  gap-10 lg:rounded-[calc(1.5rem-1px)] lg:p-10 bg-white dark:bg-gray-900 p-[14px]"
     >
+      <>
+        <span>{JSON.stringify(expanded)}</span>
+      </>
       <Company
         companyName={item.company}
         position={item.position}
@@ -23,11 +26,13 @@ const WorkItem: React.FC<WorkItemProps> = ({ item }) => {
           "data-aos": "fade-right",
           "data-aos-delay": "200",
         }}
-        onToggle={() => setExpanded((prev) => !prev)}
+        onToggle={() => {
+          if (item.projectJoineds?.length) setExpanded((prev) => !prev);
+        }}
       />
       <div
         id="content"
-        className={`content overflow-hidden grid duration-300 max-h-screen overflow-y-auto md:max-h-[100%] md:overflow-unset md:grid-rows-1  ${
+        className={`content overflow-hidden grid duration-300 max-h-screen overflow-y-auto md:max-h-[100%]  md:overflow-unset md:grid-rows-1  ${
           expanded ? "expanded" : ""
         }`}
       >
