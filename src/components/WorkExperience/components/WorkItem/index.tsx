@@ -24,9 +24,10 @@ const WorkItem: React.FC<WorkItemProps> = ({ item }) => {
           "data-aos": "fade-right",
           "data-aos-delay": "200",
         }}
-        onToggle={() =>
-          item.projectJoineds?.length && setExpanded((prev) => !prev)
-        }
+        onToggle={() => {
+          alert(item.projectJoineds?.length);
+          item.projectJoineds?.length && setExpanded((prev) => !prev);
+        }}
       />
       <div
         id="content"
