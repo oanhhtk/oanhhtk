@@ -32,9 +32,10 @@ const WorkItem: React.FC<WorkItemProps> = ({ item }) => {
       />
       <div
         id="content"
-        className={`content overflow-hidden grid duration-300 max-h-screen overflow-y-auto md:max-h-[100%]  md:overflow-unset md:grid-rows-1  ${
-          expanded ? "expanded" : ""
-        }`}
+        className={`content overflow-hidden grid duration-300 max-h-screen overflow-y-auto md:max-h-[100%] md:overflow-unset md:grid-rows-1`}
+        style={{
+          gridTemplateRows: expanded ? "1fr" : "0fr",
+        }}
       >
         <div className="min-h-0 bg-white rounded-b-sm  ">
           <div className="px-3 lg:px-8 py-4 leading-relaxed">
