@@ -187,8 +187,10 @@ body::-webkit-scrollbar {
 /* Toggle when click company name */
 .content {
   grid-template-rows: 0fr;
+  will-change: transform; /* Example of <custom-ident> */
 
   &.expanded {
     grid-template-rows: 1fr;
+    will-change: transform; /* Example of <custom-ident> */
   }
 }

@@ -28,16 +28,16 @@ export default function Company({
         <path
           d="M32.6066 22H11.3934"
           stroke="#202842"
-          stroke-width="1.875"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.875"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M22 11.3934V32.6066"
           stroke="#202842"
-          stroke-width="1.875"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.875"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
       <p className="text-center">{startDate}</p>
