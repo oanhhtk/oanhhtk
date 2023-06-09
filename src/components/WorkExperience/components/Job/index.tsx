@@ -1,20 +1,25 @@
 export interface IJobProps {
   projectList: ProjectItem[];
   aosAnimation: Record<string, any>;
+  className: string;
 }
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 
-export default function Job({ projectList, aosAnimation }: Partial<IJobProps>) {
+export default function Job({
+  projectList,
+  aosAnimation,
+  className,
+}: Partial<IJobProps>) {
   return (
-    <div {...aosAnimation}>
+    <div {...aosAnimation} className={className}>
       <ol>
         {projectList?.map((item, i) => (
           <div key={i}>
             {i === 0 ? (
               <li className="border-l-2 border-purple-600">
-                <div className="md:flex flex-start">
+                <div className="md:flex flex-start gap-1">
                   <div className="bg-purple-600 w-6 h-6 p-1 flex items-center justify-center rounded-full -ml-3.5">
                     <FontAwesomeIcon
                       icon={faCalendar}
@@ -23,7 +28,7 @@ export default function Job({ projectList, aosAnimation }: Partial<IJobProps>) {
                       color="#FFF"
                     />
                   </div>
-                  <div className="block p-3 min-w-[100%] rounded-lg shadow-lg bg-gray-100 max-w-md mx-3 mb-10">
+                  <div className="block p-3 min-w-[100%] rounded-lg shadow-lg bg-gray-100 max-w-md lg:mx-3 mb-10">
                     <div className="flex justify-between mb-4">
                       <a
                         href="#!"
@@ -48,7 +53,7 @@ export default function Job({ projectList, aosAnimation }: Partial<IJobProps>) {
               </li>
             ) : (
               <li className="border-l-2 border-green-600">
-                <div className="md:flex flex-start">
+                <div className="md:flex flex-start gap-1">
                   <div className="bg-green-600 w-6 h-6 p-1 flex items-center justify-center rounded-full -ml-3.5">
                     <FontAwesomeIcon
                       icon={faCalendar}
@@ -57,7 +62,7 @@ export default function Job({ projectList, aosAnimation }: Partial<IJobProps>) {
                       color="#FFF"
                     />
                   </div>
-                  <div className="block p-3 min-w-[100%] rounded-lg shadow-lg bg-gray-100 max-w-md mx-3 mb-10">
+                  <div className="block p-3 min-w-[100%] rounded-lg shadow-lg bg-gray-100 max-w-md lg:mx-3 mb-10">
                     <div className="flex justify-between mb-4">
                       <a
                         href="#!"

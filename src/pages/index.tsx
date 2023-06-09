@@ -17,7 +17,7 @@ export default function MyApp() {
       <div className="">
         <div className="block h-[70px]"></div>
         {/* <Home /> */}
-        {/* <WorkExperience data={WorkExperienceData} /> */}
+        <WorkExperience data={WorkExperienceData} />
         <Project />
         <Footer />
       </div>
