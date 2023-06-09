@@ -1,13 +1,13 @@
+import Heading from "@/components/Heading";
 import { SKILL_DATA } from "@/data";
 import AnimateText from "../AnimateText";
-import Title from "@/Title";
 
 interface HomeProps {}
 
 const Home: React.FC<HomeProps> = () => {
   return (
     <div id="home" className="scroll-page pb-[200px]">
-      <div className="flex justify-between items-center m-1 gap-[10rem] h-full">
+      <div className="flex flex-col md:flex-row justify-between items-center m-1 md:gap-[10rem] h-full">
         <div className="w-[500px]" data-aos="fade-right" data-aos-delay="400">
           <h2 className="mt-4 my-2 text-3xl font-bold text-gray-800 my-name">
             {`Hi, I'm Huynh Thi Kieu Oanh`}
@@ -59,12 +59,13 @@ const Home: React.FC<HomeProps> = () => {
           <div className="skill-rect flex items-center justify-center absolute top-[4rem] h-[470px] w-[470px] bg-[#689bdd] rotate-[-19] z-[100] rounded-[25%]">
             <div className="wrapper left-0">
               <div className="grid place-items-center justify-start py-5">
-                <Title
+                <Heading
                   title="Key skills"
                   aosAnimation={{
                     "data-aos": "fade-in",
                     "data-aos-delay": "250",
                   }}
+                  className="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text font-extrabold text-transparent"
                 />
               </div>
               <div className="grid grid-cols-2 items-center text-[24px] gap-y-5 gap-x-12">

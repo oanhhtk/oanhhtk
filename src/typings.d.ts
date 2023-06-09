@@ -13,3 +13,13 @@ type WorkExperienceDataType = {
   location: string;
   projectJoineds: ProjectItem[];
 };
+
+type ProjectItemType = {
+  id: number;
+  name: string;
+  image: string;
+  sourceCode: string;
+  liveSite: string;
+  technical: string[];
+  bgColor: string;
+};

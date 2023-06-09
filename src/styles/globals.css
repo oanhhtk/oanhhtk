@@ -7,14 +7,36 @@
 html {
   scroll-behavior: smooth;
 }
+
 a {
   display: inline-block;
   text-decoration: none;
 }
+
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-family: "Jost", sans-serif;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@layer utilities {
+  .snap {
+    scroll-snap-type: var(--scroll-snap-direction) var(--scroll-snap-constraint);
+  }
+  .snap-y {
+    --scroll-snap-direction: y;
+  }
+  .snap-mandatory {
+    --scroll-snap-constraint: mandatory;
+  }
+  .snap-start {
+    scroll-snap-align: start;
+  }
+}
+
 .scroll-page {
   display: flex;
   align-items: center;
@@ -22,6 +44,7 @@ body {
   height: 100%;
   scroll-margin-top: 4rem;
   min-height: 100vh;
+  width: 100%;
 }
 
 .wrapper {
@@ -117,6 +140,7 @@ body {
     color: #3b82f6 !important;
   }
 }
+
 .skill-rect .wrapper p a::after {
   content: "";
   background: #93c5fd73;
@@ -137,6 +161,9 @@ body {
 @media screen and (max-width: 800px) {
   .wrapper {
     width: 75vw;
+  }
+  .scroll-page {
+    min-height: 100%;
   }
 }
 .my-name {

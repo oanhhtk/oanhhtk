@@ -1,7 +1,7 @@
+import Heading from "@/components/Heading";
 import React from "react";
 import Company from "./components/Company";
 import Job from "./components/Job";
-import Title from "@/Title";
 
 interface WorkExperienceProps {
   data: Partial<WorkExperienceDataType>[];
@@ -9,13 +9,10 @@ interface WorkExperienceProps {
 //bg-gradient-to-b from-blue-300 to-pink-300 dark:from-blue-800 dark:to-purple-800
 const WorkExperience: React.FC<WorkExperienceProps> = ({ data }) => {
   return (
-    <div
-      id="work-experience"
-      className="m-1 h-full mb-[40px] bg-[#F8F6F4] p-3 "
-    >
-      <Title
+    <div id="work-experience" className="h-full bg-[#F8F6F4] p-3">
+      <Heading
         title="Work experience"
-        className="mx-6 mt-3"
+        className="text-4xl mx-6 mt-3 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text font-extrabold text-transparent"
         aosAnimation={{
           "data-aos": "fade-right",
           "data-aos-delay": "300",

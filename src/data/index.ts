@@ -111,7 +111,7 @@ export const PROJECT_DATA = [
     id: 1,
     name: "Task Management",
     image:
-      "https://res.cloudinary.com/dcsxedwqd/image/upload/v1686242752/Screen_Shot_2023-06-08_at_23.45.42_c4yupm.png",
+      "https://res.cloudinary.com/dcsxedwqd/image/upload/v1686274483/Screen_Shot_2023-06-09_at_08.34.35_fho3bb.png",
     sourceCode: "https://github.com/oanhhtk/task-management-v2",
     liveSite: "https://task-management-v2-oanhhtk.vercel.app",
     technical: ["ReactJs", "NextJS", "Ant Design"],
