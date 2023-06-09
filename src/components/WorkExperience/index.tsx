@@ -11,10 +11,10 @@ interface WorkExperienceProps {
 const WorkExperience: React.FC<WorkExperienceProps> = ({ data }) => {
   const [expanded, setExpanded] = useState(false);
   return (
-    <div id="work-experience" className="h-full m-2 bg-[#DFE7FF]">
+    <div id="work-experience" className="h-full m-2 bg-[#DFE7FF] rounded-xl">
       <Heading
         title="Work experience"
-        className="text-center lg:text-left  text-4xl mt-3 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text font-extrabold text-transparent"
+        className="text-center lg:text-left text-4xl mt-3 pt-5 lg:p-4 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text font-extrabold text-transparent"
         aosAnimation={{
           "data-aos": "fade-right",
           "data-aos-delay": "300",
