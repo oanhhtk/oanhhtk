@@ -192,3 +192,6 @@ body::-webkit-scrollbar {
     grid-template-rows: 1fr;
   }
 }
+.content::-webkit-scrollbar {
+  display: none;
+}

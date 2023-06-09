@@ -14,9 +14,6 @@ const WorkItem: React.FC<WorkItemProps> = ({ item }) => {
       data-aos-delay="200"
       className="flex flex-col lg:items-start  gap-10 lg:rounded-[calc(1.5rem-1px)] lg:p-10 bg-white dark:bg-gray-900 p-[14px]"
     >
-      <>
-        <span>{JSON.stringify(expanded)}</span>
-      </>
       <Company
         companyName={item.company}
         position={item.position}
