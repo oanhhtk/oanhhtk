@@ -6,9 +6,13 @@ interface HomeProps {}
 
 const Home: React.FC<HomeProps> = () => {
   return (
-    <div id="home" className="scroll-page pb-[200px]">
-      <div className="flex flex-col md:flex-row justify-between items-center m-1 md:gap-[10rem] h-full">
-        <div className="w-[500px]" data-aos="fade-right" data-aos-delay="400">
+    <div id="home" className="scroll-page">
+      <div className="flex flex-col items-center lg:flex-row lg:justify-between lg:items-center m-1 lg:gap-[10rem] h-full">
+        <div
+          className="max-w-[500px] p-3 m-3"
+          data-aos="fade-right"
+          data-aos-delay="400"
+        >
           <h2 className="mt-4 my-2 text-3xl font-bold text-gray-800 my-name">
             {`Hi, I'm Huynh Thi Kieu Oanh`}
           </h2>
@@ -54,9 +58,35 @@ const Home: React.FC<HomeProps> = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-left" data-aos-delay="400">
-          <div className="rect relative w-[470px] h-[470px] bg-[#000000] rotate-[15deg] top-[3rem] z-[12] right-[-4rem] rounded-[25%]"></div>
-          <div className="skill-rect flex items-center justify-center absolute top-[4rem] h-[470px] w-[470px] bg-[#689bdd] rotate-[-19] z-[100] rounded-[25%]">
+        <div data-aos="fade-left" data-aos-delay="400" className="">
+          <div className="m-2 relative">
+            <div className="skill-rect z-10 flex items-center justify-center w-[100%] bg-[#689bdd] rounded-[25%] top-[-1rem] relative before:absolute before:w-full before:h-full before:bg-slate-300 right-[-1rem] before:z-[-10] before:rounded-[25%] before:bg-gradient-to-r from-slate-100 to-indigo-200 ">
+              <div className="absolute w-[100%] h-full bg-slate-300 right-[-1rem] z-[-10] rounded-[25%] bg-gradient-to-r from-slate-100 to-indigo-200 "></div>
+              <div className="wrapper left-0 p-12">
+                <div className="grid place-items-center justify-start py-5">
+                  <Heading
+                    title="Key skills"
+                    aosAnimation={{
+                      "data-aos": "fade-in",
+                      "data-aos-delay": "250",
+                    }}
+                    className="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text font-extrabold text-transparent z-10 "
+                  />
+                </div>
+                <div className="grid grid-cols-2 items-center justify-center text-[24px] gap-y-3 gap-x-12 min-w-[400px] ">
+                  {SKILL_DATA.map((text) => (
+                    <div key={text} className="text-center">
+                      <p key={text}>
+                        <a href="#">{text}</a>
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <div className="rect relative h-[470px] w-[470px] lg:h-[470px] bg-[#000000] rotate-[15deg] top-[3rem] z-[12] right-[-4rem] rounded-[25%]"></div>
+          <div className="skill-rect flex items-center justify-center absolute top-[4rem] h-[100%] w-[100%] bg-[#689bdd] rotate-[-19] z-[100] rounded-[25%]">
             <div className="wrapper left-0">
               <div className="grid place-items-center justify-start py-5">
                 <Heading
@@ -78,7 +108,7 @@ const Home: React.FC<HomeProps> = () => {
                 ))}
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

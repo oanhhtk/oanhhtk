@@ -114,6 +114,8 @@ export const PROJECT_DATA = [
       "https://res.cloudinary.com/dcsxedwqd/image/upload/v1686274483/Screen_Shot_2023-06-09_at_08.34.35_fho3bb.png",
     sourceCode: "https://github.com/oanhhtk/task-management-v2",
     liveSite: "https://task-management-v2-oanhhtk.vercel.app",
+    shortDescriptions:
+      "Arranging tasks need to be done in the order and manage your task effectively.",
     technical: ["ReactJs", "NextJS", "Ant Design"],
     bgColor: "bg-[#EFD9D1]",
   },
@@ -124,6 +126,7 @@ export const PROJECT_DATA = [
       "https://res.cloudinary.com/dcsxedwqd/image/upload/v1650785639/portfolio/Screenshot_15_g05wrf.png",
     sourceCode: "https://github.com/oanhhtk/my-portfolio",
     liveSite: "https://oanhhtk-portfolio.vercel.app",
+    shortDescriptions: "arrange tasks in the order they need to be done",
     technical: ["ReactJs", "Tailwind CSS"],
   },
 
@@ -134,15 +137,17 @@ export const PROJECT_DATA = [
       "https://res.cloudinary.com/dcsxedwqd/image/upload/v1650782499/portfolio/Screenshot_14_yg3n3s.png",
     sourceCode: "https://github.com/oanhhtk/e-commerce",
     liveSite: "https://e-commerce-kaaaaaaaaaaaaaaaaaaaaaaa.vercel.app",
+    shortDescriptions: "arrange tasks in the order they need to be done",
     technical: ["ReactJs", "Redux Toolkit", "Material UI"],
   },
   {
     id: 3,
-    name: "Golden Sneacker - Shopping cart",
+    name: "Shopping cart",
     image:
       "https://res.cloudinary.com/dcsxedwqd/image/upload/v1650782499/portfolio/Screenshot_11_a6o7t1.png",
     sourceCode: "https://github.com/oanhhtk/shopping-cart",
     liveSite: "https://oanhhtk-shopping-cart.surge.sh",
+    shortDescriptions: "arrange tasks in the order they need to be done",
     technical: ["ReactJs", "SASS"],
   },
   {
@@ -152,6 +157,7 @@ export const PROJECT_DATA = [
       "https://res.cloudinary.com/dcsxedwqd/image/upload/v1650782499/portfolio/Screenshot_12_jfus06.png",
     sourceCode: "https://github.com/oanhhtk/beong-blog",
     liveSite: "https://kaaaaaaaaaaa.github.io/beong-blog/",
+    shortDescriptions: "arrange tasks in the order they need to be done",
     technical: ["HTML", "CSS", "JavaScript", "NodeJs", "MongoDB"],
   },
   {
@@ -161,6 +167,7 @@ export const PROJECT_DATA = [
       "https://res.cloudinary.com/dcsxedwqd/image/upload/v1650782500/portfolio/Screenshot_9_vcaryh.png",
     sourceCode: "https://github.com/oanhhtk/photo-app",
     liveSite: "https://kaaaaaaaaaaa-photo-app.surge.sh/photos",
+    shortDescriptions: "arrange tasks in the order they need to be done",
     technical: ["ReactJs", "Redux Toolkit", "SASS"],
   },
   {
@@ -170,6 +177,7 @@ export const PROJECT_DATA = [
       "https://res.cloudinary.com/dcsxedwqd/image/upload/v1685292709/portfolio/Screen_Shot_2023-05-28_at_23.50.28_vs40q1.png",
     sourceCode: "https://github.com/oanhhtk/photo-app",
     liveSite: "https://oanhhtk-clone-vnexpress.surge.sh",
+    shortDescriptions: "arrange tasks in the order they need to be done",
     technical: ["ReactJs", "CSS", "SASS"],
   },
   {
@@ -179,6 +187,7 @@ export const PROJECT_DATA = [
       "https://res.cloudinary.com/dcsxedwqd/image/upload/v1650784626/portfolio/weather_ckbbmn.png",
     sourceCode: "https://github.com/oanhhtk/weather-app/",
     liveSite: "https://oanhhtk-weather-app.surge.sh",
+    shortDescriptions: "arrange tasks in the order they need to be done",
     technical: ["HTML", "CSS", "JavaScript"],
   },
 ];

@@ -15,7 +15,7 @@ const CardItem: React.FC<Partial<CardItemProps>> = ({
 }) => {
   return (
     <div data-aos="fade-in" data-aos-delay="200" className={className}>
-      <div className="m-2 py-4 px-3 lg:mt-16 max-w-[350px] min-w-[300px] overflow-hidden bg-[#fff] rounded-3xl shadow-xl ">
+      <div className="m-2 py-4 px-3 lg:mt-16 max-w-[350px] min-w-[300px] overflow-hidden bg-[#fff] rounded-3xl shadow-xl min-h-[450px]">
         <div className="p-3 overflow-hidden rounded-3xl">
           <div
             style={{
@@ -44,8 +44,7 @@ const CardItem: React.FC<Partial<CardItemProps>> = ({
           </h2>
           <div className="w-5/6 m-auto">
             <p className="text-justify text-gray-500 pt-3">
-              You can now listen to millions of songs, audiobooks ands podcasts
-              on any device anywhere you like!
+              {data?.shortDescriptions}
             </p>
           </div>
 

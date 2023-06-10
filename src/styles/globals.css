@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  /* scroll-margin-top: 4rem; */
 }
 
 a {

@@ -19,28 +19,7 @@ export default function Company({
 }: Partial<ICompanyProps>) {
   return (
     <div {...aosAnimation} className={className} onClick={onToggle}>
-      <svg
-        className="w-10 h-10"
-        viewBox="0 0 44 44"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M32.6066 22H11.3934"
-          stroke="#202842"
-          strokeWidth="1.875"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M22 11.3934V32.6066"
-          stroke="#202842"
-          strokeWidth="1.875"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-      <p className="text-center">{startDate}</p>
+      <p className="text-center lg:text-left">{startDate}</p>
       <div className="text-center sm:text-left mb-5 lg:mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-violet-400">
         <h3 className="text-2xl lg:text-3xl font-semibold">{companyName}</h3>
         <span className="text-sm font-bold tracking-wider uppercase dark:text-gray-400">
