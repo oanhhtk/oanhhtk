@@ -6,7 +6,6 @@
 
 html {
   scroll-behavior: smooth;
-  /* scroll-margin-top: 4rem; */
 }
 
 a {
@@ -21,6 +20,13 @@ body {
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+.truncate-2line {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 @layer utilities {
@@ -87,9 +93,16 @@ body::-webkit-scrollbar {
 }
 
 .skill-rect {
-  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  background-image: linear-gradient(
+    to top,
+    #dad4ec 0%,
+    #dad4ec 1%,
+    #f3e7e9 100%
+  );
+  border-radius: 30% 70% 70% 30% / 27% 30% 70% 73%;
 }
-.rect {
+.skill-rect:before {
+  border-radius: 28% 72% 70% 30% / 68% 46% 54% 32%;
   background-image: linear-gradient(
     to top,
     #f3e7e9 0%,
@@ -161,7 +174,7 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 800px) {
   .wrapper {
-    width: 75vw;
+    /* width: 75vw; */
   }
   .scroll-page {
     min-height: 100%;

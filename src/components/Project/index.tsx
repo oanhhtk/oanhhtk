@@ -5,7 +5,7 @@ import List from "./components/List";
 interface ProjectProps {}
 
 const Project: React.FC<ProjectProps> = () => (
-  <div className="scroll-page">
+  <div className="scroll-page !scroll-mt-[60px]">
     <div className="overflow-hidden justify-center lg:flex lg:flex-col items-center">
       <Heading
         title="Pet Project"

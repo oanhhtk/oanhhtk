@@ -1,3 +1,5 @@
+import { MENU } from "@/utils";
+
 interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = () => {
@@ -37,8 +39,8 @@ const Footer: React.FC<FooterProps> = () => {
                   {/* <ion-icon name="earth-outline"></ion-icon> */}
                   <span className="px-2"> Website:</span>
                   <span>
-                    <a href="https://oanhhtk-portfolio.vercel.app">
-                      https://oanhhtk-portfolio.vercel.app
+                    <a href="https://oanhhtk.vercel.app">
+                      https://oanhhtk.vercel.app
                     </a>
                   </span>
                 </p>
@@ -126,11 +128,11 @@ const Footer: React.FC<FooterProps> = () => {
           </div>
           <div>
             <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
-              <li>Home</li>
-              <li>Work Experience</li>
-              <li>Project</li>
-              {/* <li>Blog</li> */}
-              <li>Contact</li>
+              {MENU.map((i) => (
+                <a key={i.href} href={i.href}>
+                  {i.label}
+                </a>
+              ))}
             </ul>
           </div>
         </div>

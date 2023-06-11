@@ -1,19 +1,21 @@
+//
+// import myCV from "@/data/pdf/oanhhtk-frontend-developer.pdf";
 export const MENU = [
   {
-    label: "home",
+    label: "Home",
     href: "home",
   },
   {
-    label: "work experience",
+    label: "Work Experience",
     href: "work-experience",
   },
   {
-    label: "personal project",
+    label: "Personal Project",
     href: "project",
   },
   {
-    label: "education",
-    href: "education",
+    label: "Download CV",
+    href: " ",
   },
 ];
 

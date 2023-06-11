@@ -1,21 +1,19 @@
 import Footer from "@/components/Footer";
 import HeaderDesktop from "@/components/Header/HeaderDeskTop";
 import HeaderMobile from "@/components/Header/HeaderMobile";
+import Home from "@/components/Home";
 import Project from "@/components/Project";
 import WorkExperience from "@/components/WorkExperience";
 import { WorkExperienceData } from "@/data";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function MyApp() {
   return (
     <div className="w-full h-full">
       <HeaderDesktop className="hidden lg:block" />
       <HeaderMobile className="block lg:hidden" />
-      <div className="">
+      <div>
         <div className="block h-[70px]"></div>
-        {/* <Home /> */}
+        <Home />
         <WorkExperience data={WorkExperienceData} />
         <Project />
         <Footer />

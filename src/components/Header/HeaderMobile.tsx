@@ -1,5 +1,6 @@
 import useScrollspy from "@/hooks/useScrollspy";
 import { HEADER_HEIGHT, MENU } from "@/utils";
+import Link from "next/link";
 import React, { useState } from "react";
 
 interface HeaderMobileProps {

@@ -11,6 +11,7 @@ type WorkExperienceDataType = {
   startDate: string;
   endDate: string;
   location: string;
+  stydying?: boolean;
   projectJoineds: ProjectItem[];
 };
 

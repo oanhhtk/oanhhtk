@@ -43,7 +43,7 @@ const CardItem: React.FC<Partial<CardItemProps>> = ({
             {data?.name}
           </h2>
           <div className="w-5/6 m-auto">
-            <p className="text-justify text-gray-500 pt-3">
+            <p className="text-justify text-gray-500 pt-3 truncate-2line">
               {data?.shortDescriptions}
             </p>
           </div>
