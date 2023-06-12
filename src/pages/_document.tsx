@@ -22,6 +22,11 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Raleway:wght@600;700;900&display=swap"
           rel="stylesheet"
         />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700&display=swap"
+        />
       </Head>
       <body>
         <Main />

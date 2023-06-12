@@ -1,11 +1,12 @@
 import Heading from "@/components/Heading";
 import { PROJECT_DATA } from "@/data";
 import List from "./components/List";
+import TextSwiftup from "../TextSwiftUp";
 
 interface ProjectProps {}
 
 const Project: React.FC<ProjectProps> = () => (
-  <div className="scroll-page !scroll-mt-[60px]">
+  <div className="scroll-page !scroll-mt-[60px] ">
     <div className="overflow-hidden justify-center lg:flex lg:flex-col items-center">
       <Heading
         title="Pet Project"
@@ -19,7 +20,7 @@ const Project: React.FC<ProjectProps> = () => (
         data-aos="fade-in"
         data-aos-delay="450"
         id="project"
-        className="overflow-x-scroll m-2"
+        className="overflow-x-scroll m-2 "
       >
         <List list={PROJECT_DATA} />
       </div>

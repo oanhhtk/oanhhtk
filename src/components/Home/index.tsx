@@ -1,21 +1,23 @@
 import { SKILL_DATA } from "@/data";
 import AnimateText from "../AnimateText";
 import KeySkills from "./components/KeySkill";
+import TextSwiftup from "../TextSwiftUp";
 
 interface HomeProps {}
 
 const Home: React.FC<HomeProps> = () => {
   return (
     <div id="home" className="scroll-page scroll-mt-[60px]">
-      <div className="flex flex-col items-center md:flex-row md:justify-between md:items-center m-1 md:gap-[10rem] h-full">
+      <div className="flex flex-col items-center md:flex-row md:justify-between md:items-center m-1 md:gap-[5rem] h-full">
         <div
-          className="max-w-[500px] p-3 m-3"
+          className="max-w-[600px] p-3 m-3"
           data-aos="fade-right"
           data-aos-delay="400"
         >
-          <h2 className="mt-4 my-2 text-3xl font-bold text-gray-800 my-name text-[32px]">
-            {`Hi, I'm Huynh Thi Kieu Oanh`}
+          <h2 className="mt-4 my-2 text-3xl font-bold text-gray-800 my-name text-[50px] mb-7">
+            {`Hi,`}
           </h2>
+          <TextSwiftup text={`I'm Huynh Thi Kieu Oanh`} />
           <AnimateText text="Front end Web Developer" />
           <p className="text-lg font-light leading-relaxed">
             I have more than a year of making products that solve user problems
@@ -31,12 +33,12 @@ const Home: React.FC<HomeProps> = () => {
             <span className="font-bold">My objective: </span>
             be more fluency in frontend web development using many
           </p>
-          <div className="flex items-center justify-center w-full">
-            <div className="w-full max-w-lg px-10 py-8 mx-auto bg-white rounded-lg">
-              <div className="max-w-md mx-auto space-y-6 flex justify-center">
+          <div className="flex items-center w-full">
+            <div className="w-full max-w-lg py-8 bg-white rounded-lg">
+              <div className="max-w-md space-y-6 flex ">
                 <a
                   href="mailto:oanhhuynh2402@gmail.com"
-                  className="group font-medium tracking-wide select-none text-base relative inline-flex items-center justify-center cursor-pointer h-12 border-2 border-solid py-0 px-6 rounded-md overflow-hidden z-10 transition-all duration-300 ease-in-out outline-0 bg-[#C9E0FC] text-white border-[#C9E0FC] hover:text-blue-500 focus:text-blue-500"
+                  className="group font-medium tracking-wide select-none text-base relative inline-flex items-center cursor-pointer h-12 border-2 border-solid py-0 px-6 rounded-md overflow-hidden z-10 transition-all duration-300 ease-in-out outline-0 bg-[#C9E0FC] text-white border-[#C9E0FC] hover:text-blue-500 focus:text-blue-500"
                 >
                   <strong className="font-medium text-blue-500 ">
                     Work with me

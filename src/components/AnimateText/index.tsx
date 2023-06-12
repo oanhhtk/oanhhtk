@@ -6,9 +6,11 @@ interface AnimateTextProps {
 
 const AnimateText: React.FC<AnimateTextProps> = ({ text }) => {
   return (
-    <div className="container-animation-text text-[38px]  md:text-[40px] lg:text-[50px]">
-      <div className="typewriter">{text}</div>
-    </div>
+    <>
+      <div className="container-animation-text">
+        <div className="typewriter">{text}</div>
+      </div>
+    </>
   );
 };
 

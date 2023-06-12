@@ -1,7 +1,5 @@
 import Heading from "@/components/Heading";
-import React, { useState } from "react";
-import Company from "./components/Company";
-import Job from "./components/Job";
+import React from "react";
 import WorkItem from "./components/WorkItem";
 
 interface WorkExperienceProps {

@@ -123,7 +123,7 @@ export const PROJECT_DATA = [
     id: 1,
     name: "My Portfolio",
     image:
-      "https://res.cloudinary.com/dcsxedwqd/image/upload/v1650785639/portfolio/Screenshot_15_g05wrf.png",
+      "https://res.cloudinary.com/dcsxedwqd/image/upload/v1686585682/Screen_Shot_2023-06-12_at_23.01.09_h8v826.png",
     sourceCode: "https://github.com/oanhhtk/my-portfolio",
     liveSite: "https://oanhhtk.vercel.app",
     shortDescriptions: "My Portfolio showing my story 😉",

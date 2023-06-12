@@ -30,7 +30,7 @@ const HeaderDesktop: React.FC<HeaderProps> = ({ className }) => {
                   <a
                     download={!!item?.dowload || false}
                     key={item.href}
-                    href={`#${item.href}`}
+                    href={!!item?.dowload ? `${item.href}` : `#${item.href}`}
                     className={`transition text-gray-800 dark:text-gray-200 border-b-2 border-transparent hover:border-[#EC407A] mx-1.5 sm:mx-6 ${
                       activeId === item.href ? "!border-[#EC407A]" : ""
                     }`}

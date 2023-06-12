@@ -140,7 +140,7 @@ body::-webkit-scrollbar {
     width: 0;
   }
   100% {
-    width: 21.5ch;
+    width: 650px;
   }
 }
 
@@ -208,4 +208,51 @@ body::-webkit-scrollbar {
 }
 .content::-webkit-scrollbar {
   display: none;
+}
+
+:root {
+  --headingSize: 50px;
+  --background-color: #fff;
+  color: #000;
+}
+
+h1.heading {
+  margin: 0;
+  letter-spacing: -1px;
+  font-size: var(--headingSize);
+  color: #000;
+}
+
+.text-swift-container {
+  width: 100%;
+}
+
+.text-swift-container span {
+  display: inline-block;
+  overflow: hidden;
+  animation: 0.3s swift-up ease-in-out forwards;
+}
+
+.text-swift-container i {
+  font-style: normal;
+  position: relative;
+  top: 70px;
+  animation: 0.5s swift-up ease-in-out forwards;
+}
+
+@keyframes swift-up {
+  to {
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .text-swift-container {
+    width: auto;
+    margin: 0 10%;
+  }
+
+  :root {
+    --headingSize: 35px;
+  }
 }

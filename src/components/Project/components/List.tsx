@@ -7,7 +7,7 @@ interface ListProps {
 
 const List: React.FC<ListProps> = ({ list }) => {
   return (
-    <ul className="relative flex flex-1 lg:gap-[20px] overflow-x-scroll snap-center snap-mandatory snap-x [&:not(.stiky)]:snap-center lg:flex lg:flex-wrap lg:justify-center gap-4">
+    <ul className=" pb-5 relative flex flex-1 lg:gap-[20px] overflow-x-scroll snap-center snap-mandatory snap-x [&:not(.stiky)]:snap-center lg:flex lg:flex-wrap lg:justify-center gap-4">
       {list.map((data, i) => (
         <li key={i} className="sticky left-0 flex h-full ">
           <CardItem
