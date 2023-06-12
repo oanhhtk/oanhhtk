@@ -15,7 +15,8 @@ export const MENU = [
   },
   {
     label: "Download CV",
-    href: " ",
+    href: "/oanhhtk.pdf",
+    dowload: true,
   },
 ];
 
