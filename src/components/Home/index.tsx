@@ -14,7 +14,7 @@ const Home: React.FC<HomeProps> = () => {
           data-aos="fade-right"
           data-aos-delay="400"
         >
-          <h2 className="mt-4 my-2 text-3xl font-bold text-gray-800 my-name text-[50px] mb-7">
+          <h2 className="md:mt-4 md:y-2 text-3xl font-bold text-gray-800 my-name md:text-[50px] mb-7">
             {`Hi,`}
           </h2>
           <TextSwiftup text={`I'm Huynh Thi Kieu Oanh`} />

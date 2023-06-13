@@ -26,7 +26,7 @@ const TextSwiftup: React.FC<TextSwiftupProps> = ({ text }) => {
 
   return (
     <div className="text-swift-container">
-      <h1 className="swift-up-text heading mt-4 my-2 font-bold text-gray-800 text-[24px]">
+      <h1 className="swift-up-text heading mt-4 my-2 font-bold text-gray-800 !text-[38px]">
         {text}
       </h1>
     </div>

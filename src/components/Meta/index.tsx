@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-before-interactive-script-outside-document */
 // import { isEnvDev } from '@/utils/constants';
 import Head from "next/head";
-import Script from "next/script";
 
 const Meta = () => {
   return (

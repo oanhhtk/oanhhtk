@@ -180,6 +180,19 @@ body::-webkit-scrollbar {
     min-height: 100%;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .typewriter {
+    width: 360px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: none;
+    animation: unset !important;
+    font-size: 25px;
+    margin: 20px 0px;
+  }
+}
+
 .my-name {
   font-family: "Jost";
   letter-spacing: 1.5px;
