@@ -39,8 +39,8 @@ const Footer: React.FC<FooterProps> = () => {
                   {/* <ion-icon name="earth-outline"></ion-icon> */}
                   <span className="px-2"> Website:</span>
                   <span>
-                    <a href="https://oanhhtk.vercel.app">
-                      https://oanhhtk.vercel.app
+                    <a href="https://oanhhtk-frontend-dev.vercel.app">
+                      https://oanhhtk-frontend-dev.vercel.app
                     </a>
                   </span>
                 </p>
