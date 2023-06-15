@@ -15,7 +15,7 @@ export const MENU = [
   },
   {
     label: "Download CV",
-    href: "/oanhhtk.pdf",
+    href: "/Frontend-developer_Huynh-Thi-Kieu-Oanh.pdf",
     dowload: true,
   },
 ];
