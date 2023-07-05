@@ -109,6 +109,17 @@ export const SKILL_DATA = [
 export const PROJECT_DATA = [
   {
     id: 1,
+    name: "Chat app",
+    image:
+      "https://res.cloudinary.com/dcsxedwqd/image/upload/v1688546464/Screen_Shot_2023-07-05_at_15.41.00_y99url.png",
+    sourceCode: "https://github.com/oanhhtk/chat-app",
+    liveSite: "https://chat-app-oanhhtk.vercel.app",
+    shortDescriptions: "A real time chat app.",
+    technical: ["ReactJs", "NextJS", "Ant Design"],
+    bgColor: "bg-[#EFD9D1]",
+  },
+  {
+    id: 2,
     name: "Task Management",
     image:
       "https://res.cloudinary.com/dcsxedwqd/image/upload/v1686274483/Screen_Shot_2023-06-09_at_08.34.35_fho3bb.png",
@@ -120,7 +131,7 @@ export const PROJECT_DATA = [
     bgColor: "bg-[#EFD9D1]",
   },
   {
-    id: 1,
+    id: 3,
     name: "My Portfolio",
     image:
       "https://res.cloudinary.com/dcsxedwqd/image/upload/v1686585682/Screen_Shot_2023-06-12_at_23.01.09_h8v826.png",
@@ -141,7 +152,7 @@ export const PROJECT_DATA = [
     technical: ["ReactJs", "Redux Toolkit", "Material UI"],
   },
   {
-    id: 3,
+    id: 6,
     name: "Shopping cart",
     image:
       "https://res.cloudinary.com/dcsxedwqd/image/upload/v1650782499/portfolio/Screenshot_11_a6o7t1.png",
@@ -172,7 +183,7 @@ export const PROJECT_DATA = [
     technical: ["ReactJs", "Redux Toolkit", "SASS"],
   },
   {
-    id: 5,
+    id: 10,
     name: "Clone VNEXPRESS",
     image:
       "https://res.cloudinary.com/dcsxedwqd/image/upload/v1685292709/portfolio/Screen_Shot_2023-05-28_at_23.50.28_vs40q1.png",
